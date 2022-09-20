@@ -8,12 +8,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-
 public class PC {
 
     private DellCase theCase;
     private AcerMonitor theMonitor;
-
     private AsusMotherboard theMotherboard;
 
     public void powerUp() {

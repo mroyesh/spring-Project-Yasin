@@ -5,7 +5,6 @@ import com.cydeo.Loosely_Coupling.monitorFactory.Monitor;
 import com.cydeo.Loosely_Coupling.motherboardFactory.Motherboard;
 
 public class PC {
-
     private Case theCase;
     private Monitor theMonitor;
     private Motherboard theMotherboard;

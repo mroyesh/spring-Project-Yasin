@@ -9,7 +9,6 @@ import lombok.Setter;
 @AllArgsConstructor
 
 public class AcerMonitor {
-
     private String model;
     private String manufacturer;
     private int size;

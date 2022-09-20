@@ -11,6 +11,5 @@ public abstract class Monitor {
         this.manufacturer = manufacturer;
         this.size = size;
     }
-
     public abstract void drawPixelAt();
 }

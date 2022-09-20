@@ -6,7 +6,7 @@ public class AsusMotherboard extends Motherboard {
         super(model, manufacturer, ramSlots, cardSlots, bios);
     }
 
-    public void loadProgram(String programName) {
+    public void loadProgram(String programName){
         System.out.println("Program " + programName + " is now loading...");
     }
 

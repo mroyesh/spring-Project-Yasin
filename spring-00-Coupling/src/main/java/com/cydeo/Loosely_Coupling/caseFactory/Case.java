@@ -1,7 +1,6 @@
 package com.cydeo.Loosely_Coupling.caseFactory;
 
 public  abstract class Case {
-
     private String model;
     private String manufacturer;
     private String powerSupply;

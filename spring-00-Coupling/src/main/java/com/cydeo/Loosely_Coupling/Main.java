@@ -16,6 +16,7 @@ public class Main {
         PC myPc= new PC(case1,monitor1,  motherboard1);
 
         myPc.powerUp();
+        System.out.println("myPc = " + myPc);
 
 
     }

@@ -19,25 +19,14 @@ public class ComputerConfig {
         return new SonyMonitor("123B","Sony", 27);
     }
 
-    @Bean
+    @Bean("Acer")
     public Monitor monitorAcer(){
         return new AcerMonitor("123B","Sony", 27);
-
     }
-
-
-
-
-
     @Bean
     public Motherboard asusMotherboard(){
         return new AsusMotherboard("12GDC", "Asus",123,12343,"Bios");
     }
-
-
-
-
-
 
     @Bean
     public Case dellCase(){
