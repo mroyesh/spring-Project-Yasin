@@ -22,6 +22,7 @@ public abstract class Case {
         this.manufacturer = manufacturer;
         this.powerSupply = powerSupply;
 
+
     }
 
 

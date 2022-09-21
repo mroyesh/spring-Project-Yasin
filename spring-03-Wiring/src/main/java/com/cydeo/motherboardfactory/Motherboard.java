@@ -20,7 +20,6 @@ public abstract class Motherboard {
         this.cardSlots = cardSlots;
         this.bios = bios;
     }
-
     public abstract void loadProgram(String programName);
 
 }

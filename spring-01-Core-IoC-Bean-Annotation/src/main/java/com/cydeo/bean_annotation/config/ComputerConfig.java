@@ -11,14 +11,15 @@ import com.cydeo.bean_annotation.motherboardfactory.Motherboard;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+
 @Configuration
 public class ComputerConfig {
 
     @Bean("Sony")
+
     public Monitor monitorSony(){
         return new SonyMonitor("123B","Sony", 27);
     }
-
     @Bean("Acer")
     public Monitor monitorAcer(){
         return new AcerMonitor("123B","Sony", 27);
