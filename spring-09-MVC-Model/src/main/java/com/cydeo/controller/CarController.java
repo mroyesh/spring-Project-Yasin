@@ -21,7 +21,7 @@ public class CarController {
 
 
     @RequestMapping("info2")
-    public String carInfo2(@RequestParam(value = "make", required = false, defaultValue = "KIA") String make, Model model){
+    public String carInfo2(@RequestParam(value = "make",required = false, defaultValue = "KIA") String make, Model model){
         model.addAttribute("make", make);
         return "car/car-info";
     }
@@ -38,9 +38,10 @@ public class CarController {
     }
 
     @RequestMapping("/info/{make}/{year}")
-    public String getCarInfo(@PathVariable String make,@PathVariable int year, Model model){
+    public String getCarInfo(@PathVariable String make,@PathVariable int year){
         System.out.println(make);
         System.out.println(year);
+
 
 //        how can capture honda here
         return "car/car-info";

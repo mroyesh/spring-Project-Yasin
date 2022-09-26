@@ -21,9 +21,9 @@ public class StudentController {
         model.addAttribute("name", "Yasin");
         model.addAttribute("course", "JD");
         String subject= "Spring boot";
-        model.addAttribute("Spring", subject);
+        model.addAttribute("Subject", subject);
         int studentId= new Random().nextInt();
-        model.addAttribute("Id", studentId);
+        model.addAttribute("Id",studentId);
 
         List<Integer> numbers= new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7));
 

@@ -7,11 +7,11 @@ import org.springframework.context.annotation.Configuration;
 @Data
 public class AppConfigData {
 
-    @Value("${username}")
+    @Value("Yasin")
     private String username;
-    @Value("${password}")
+    @Value("abc123")
     private String password;
-    @Value("${url}")
+    @Value("www.cydeo.com")
     private String url;
 
 }
