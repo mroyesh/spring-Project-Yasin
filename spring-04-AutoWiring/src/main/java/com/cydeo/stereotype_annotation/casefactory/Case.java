@@ -17,7 +17,7 @@ public abstract class Case {
 //    we have constructor injection and setter injection
 //    in this case we don't need to add on fields and constructor
 
-    public Case(String model, String manufacturer, String powerSupply) {
+    public Case( String model, String manufacturer, String powerSupply) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.powerSupply = powerSupply;

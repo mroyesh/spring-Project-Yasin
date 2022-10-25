@@ -1,5 +1,6 @@
 package com.cydeo.bean_annotation;
 
+
 import com.cydeo.bean_annotation.casefactory.Case;
 import com.cydeo.bean_annotation.config.ComputerConfig;
 import com.cydeo.bean_annotation.config.RandomConfig;
@@ -16,7 +17,9 @@ public class ComputerTest {
         System.out.println("****************   Create Container   **********************");
 
         // creating container using Application Context
-        ApplicationContext container= new AnnotationConfigApplicationContext(ComputerConfig.class, RandomConfig.class);
+
+        ApplicationContext container = new AnnotationConfigApplicationContext(ComputerConfig.class, RandomConfig.class);
+
 
 
         System.out.println("Using BeansFactory for creating container");
@@ -30,7 +33,9 @@ public class ComputerTest {
 
 
         Monitor theMonitor= container.getBean(Monitor.class);
-        Case theCase=container.getBean(Case.class);
+
+        Case theCase= container.getBean(Case.class);
+
         Motherboard theMotherboard=container.getBean(AsusMotherboard.class);
 
         PC myPc= new PC(theCase, theMonitor, theMotherboard);
@@ -48,6 +53,9 @@ public class ComputerTest {
         Monitor theMonitor2 = container.getBean("monitorSony", Monitor.class);  //DEFAULT BEAN NAME
         Monitor theMonitor3 = container.getBean("sony", Monitor.class);  //CUSTOM BEAN NAME
         Monitor theMonitor4 = container.getBean( Monitor.class);  //@Primary
+
+
+
 
 
 
