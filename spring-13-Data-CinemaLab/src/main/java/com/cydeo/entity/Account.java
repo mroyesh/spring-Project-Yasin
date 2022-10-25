@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 
-@Table(name = "account_datails")
+@Table(name = "account_details")
 public class Account extends BaseEntity{
 
     private String name;
