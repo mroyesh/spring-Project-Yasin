@@ -6,7 +6,6 @@ public class DellCase extends Case {
 
         super(model, manufacturer, powerSupply,dimensions);
     }
-
     public void pressPowerButton() {
 
         System.out.println("Power button pressed");

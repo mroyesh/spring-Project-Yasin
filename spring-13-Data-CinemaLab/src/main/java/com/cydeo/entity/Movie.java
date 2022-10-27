@@ -15,7 +15,6 @@ import java.util.Set;
 @Entity
 @NoArgsConstructor
 @Data
-
 public class Movie extends BaseEntity{
 
     private String name;

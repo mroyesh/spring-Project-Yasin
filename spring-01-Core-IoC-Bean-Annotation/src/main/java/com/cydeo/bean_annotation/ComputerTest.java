@@ -25,7 +25,7 @@ public class ComputerTest {
         System.out.println("Using BeansFactory for creating container");
 
         //Creating container by using BeanFactory
-        BeanFactory context = new AnnotationConfigApplicationContext();
+        BeanFactory context = new AnnotationConfigApplicationContext(RandomConfig.class);
 
         System.out.println("-----------------     retrieving beans  -----------------");
 

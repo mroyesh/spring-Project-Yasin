@@ -32,8 +32,13 @@ public class Payment {
     @ManyToOne()  // many payments one merchant
     private Merchant merchant;
 
-    @ManyToOne()
+    @ManyToOne
     private Customer customer;
+
+    @OneToOne
+    @Column(name = "cart_id")
+    private Cart cart;
+
 
     public Payment(LocalDate createdDate, BigDecimal amount, Status paymentStatus) {
         this.createdDate = createdDate;

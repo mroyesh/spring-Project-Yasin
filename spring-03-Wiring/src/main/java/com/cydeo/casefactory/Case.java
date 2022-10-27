@@ -6,7 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class Case {
-
     private String model;
     private String manufacturer;
     private String powerSupply;

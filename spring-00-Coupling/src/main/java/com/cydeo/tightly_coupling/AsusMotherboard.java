@@ -15,7 +15,6 @@ public class AsusMotherboard {
     private int ramSlots;
     private int cardSlots;
     private String bios;
-
     public void loadProgram(String programName) {
         System.out.println("Program " + programName + " is now loading ...");
     }

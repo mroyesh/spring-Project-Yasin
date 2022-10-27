@@ -7,39 +7,39 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 @Controller
 public class StudentController {
 
-    @RequestMapping("welcome")
+    @RequestMapping("/welcome")
     public String homePage(Model model){
-//        String name= "Yasin";
-//        method Model interface
-        model.addAttribute("name", "Yasin");
-        model.addAttribute("course", "JD");
-        String subject= "Spring boot";
-        model.addAttribute("Subject", subject);
-        int studentId= new Random().nextInt();
-        model.addAttribute("Id",studentId);
 
-        List<Integer> numbers= new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7));
+        model.addAttribute("name","Cydeo");
+        model.addAttribute("course","MVC");
 
-        model.addAttribute("numbers", numbers);
+        String subject = "Spring Boot";
+        model.addAttribute("subject",subject);
 
-        LocalDate dt= LocalDate.now();
-        model.addAttribute("date", dt);
+        int studentId = new Random().nextInt();
+        model.addAttribute("id",studentId);
 
-        Student student= new Student(1,"Mike", "Smith");
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(4);
+        numbers.add(5);
+        numbers.add(6);
+        numbers.add(7);
 
-        model.addAttribute("student", student);
+        model.addAttribute("numbers",numbers);
+
+        LocalDate dt = LocalDate.now();
+        model.addAttribute("date",dt);
+
+        Student student = new Student(1,"Mike","Smith");
+        model.addAttribute("student",student);
 
 
-        return "/student/welcome";
-
-
+        return "student/welcome";
     }
-
 }

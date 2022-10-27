@@ -14,7 +14,6 @@ public class Dimensions {
     private int width;
     private int height;
     private int depth;
-
     public Dimensions() {
         this.width=10;
         this.height=30;
