@@ -19,9 +19,10 @@ public class StudentController {
 
     }
 
-       @RequestMapping(value="/welcome", method = RequestMethod.POST)
+//       @RequestMapping(value="/welcome", method = RequestMethod.POST)
     @PostMapping("/welcome")// this method works instead of both upper ones
-    public String welcome(){
+    public String welcome(@RequestParam String name){
+        System.out.println(name);
 
         return "/student/welcome";
 
