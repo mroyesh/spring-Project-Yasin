@@ -19,7 +19,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "page",
     "limit"
 })
+@Generated("jsonschema2pojo")
 public class Employee {
+
     @JsonProperty("data")
     private List<Datum> data = null;
     @JsonProperty("total")

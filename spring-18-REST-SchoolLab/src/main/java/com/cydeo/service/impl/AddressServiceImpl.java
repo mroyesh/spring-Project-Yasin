@@ -84,7 +84,6 @@ public class AddressServiceImpl implements AddressService {
         return mapperUtil.convert(addressToSave, new AddressDTO());
 
     }
-
     private WeatherDTO getCurrentWeather(String city) {
         return weatherApiClient.getCurrentWeather(access_key, city);
     }
